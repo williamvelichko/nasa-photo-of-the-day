@@ -5,11 +5,14 @@ import Images from "./components/Images.js";
 import Header from "./components/Header.js";
 function App() {
   const [nasaImg, setNasaImg] = useState([]);
+  const Date = "2012-03-04";
 
   useEffect(() => {
     const fetchImage = () => {
       axios
-        .get("https://api.nasa.gov/planetary/apod?api_key=DEMO_KEY")
+        .get(
+          `https://api.nasa.gov/planetary/apod?api_key=DEMO_KEY&date=${Date}`
+        )
         .then((res) => {
           console.log(res.data);
           setNasaImg(res.data);
