@@ -1,4 +1,5 @@
 import React from "react";
+import "./Images.css";
 
 const Images = (props) => {
   const { info } = props;

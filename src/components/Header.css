@@ -1,0 +1,35 @@
+* {
+  /* border: 1px solid red; */
+  background-color: grey;
+}
+
+.image-header {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+}
+
+.mainTitle {
+  border-bottom: 1px dashed black;
+}
+.mainTitle h1 {
+  width: 40%;
+  font-family: "Franklin Gothic Medium";
+  font-size: 2rem;
+}
+.description {
+  width: 100%;
+  border-bottom: 1px dashed black;
+}
+
+.description p {
+  font-family: "Franklin Gothic Medium";
+  font-size: 1.3rem;
+  margin: 20px;
+}
+.date {
+  font-size: 1.3rem;
+  width: 20%;
+  align-self: flex-end;
+  margin: 10px;
+}
