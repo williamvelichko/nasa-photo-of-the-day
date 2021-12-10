@@ -67,8 +67,8 @@ const StyledDate = styled.div`
 `;
 
 const Header = (props) => {
-  const { title, explanation, date } = props;
-  const newDate = Dates[Math.floor(Math.random() * Dates.length)];
+  const { title, explanation, date, action } = props;
+
   return (
     <StyledHeader>
       <StyledMainTitle>
@@ -79,7 +79,7 @@ const Header = (props) => {
       </StyledDescription>
 
       <StyledDate>
-        <button onClick={() => Header(date.date)}>Click for NEW DATE:</button>
+        <button onClick={() => date}>Click for NEW DATE:</button>
         {date.date}
       </StyledDate>
     </StyledHeader>
